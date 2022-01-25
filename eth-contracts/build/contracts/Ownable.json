@@ -46,9 +46,9 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"checkOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC721Mintable.sol\":\"Ownable\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xd5fa74b4fb323776fa4a8158800fec9d5ac0fec0d6dd046dd93798632ada265f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://33017a30a99cc5411a9e376622c31fc4a55cfc6a335e2f57f00cbf24a817ff3f\",\"dweb:/ipfs/QmWNQtWTPhA7Lo8nbxbc8KFMvZwbFYB8fSeEQ3vuapSV4a\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x51b758a8815ecc9596c66c37d56b1d33883a444631a3f916b9fe65cb863ef7c4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://997ca03557985b3c6f9143a18b6c3a710b3bc1c7f189ee956d305a966ecfb922\",\"dweb:/ipfs/QmQaD3Wb62F88SHqmpLttvF6wKuPDQep2LLUcKPekeRzvz\"]},\"@openzeppelin/contracts/utils/Counters.sol\":{\"keccak256\":\"0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee\",\"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0x32c202bd28995dd20c4347b7c6467a6d3241c74c8ad3edcbb610cd9205916c45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8179c356adb19e70d6b31a1eedc8c5c7f0c00e669e2540f4099e3844c6074d30\",\"dweb:/ipfs/QmWFbivarEobbqhS1go64ootVuHfVohBseerYy9FTEd1W2\"]},\"@openzeppelin/contracts/utils/math/SafeMath.sol\":{\"keccak256\":\"0xa2f576be637946f767aa56601c26d717f48a0aff44f82e46f13807eea1009a21\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://973868f808e88e21a1a0a01d4839314515ee337ad096286c88e41b74dcc11fc2\",\"dweb:/ipfs/QmfYuZxRfx2J2xdk4EXN7jKg4bUYEMTaYk9BAw9Bqn4o2Y\"]},\"project:/contracts/Concat.sol\":{\"keccak256\":\"0x7408163da3cd7bd0b3884f4f35c2fb6a9c7169f96e38a66b56a51d05c18a12e8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://001f1c8eecc92a98f6b82be75b1222dff90e1bedfe86afadccc5bdcb7a5eb068\",\"dweb:/ipfs/QmNjx6AUZC8CqRMUmHw7SZL19KSMwRjCUX2oqfhcCrenXo\"]},\"project:/contracts/ERC721Mintable.sol\":{\"keccak256\":\"0x7d8e42a7307eac7b2dc4672d55bf1b5516c48456688546728c1078eaca27f9b0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://88db87b0f2cf308f3401e18c77d44773a700dab08c45b2aef6aa4453b14c2e2e\",\"dweb:/ipfs/Qmb75Ga6kSkT1zSF7XosY9Yizhph8cULE7a6Cqoq7rihy8\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f04dba622d284ed0014ee4b9a6a68386be1a4c08a4913ae272de89199cc68616360008054906101000a900473ffffffffffffffffffffffffffffffffffffffff166040516100a091906100ee565b60405180910390a1610109565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006100d8826100ad565b9050919050565b6100e8816100cd565b82525050565b600060208201905061010360008301846100df565b92915050565b610435806101186000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063cdbce03d1461003b578063f2fde38b14610059575b600080fd5b610043610075565b6040516100509190610277565b60405180910390f35b610073600480360381019061006e91906102c3565b61009e565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b3373ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161461012c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016101239061034d565b60405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561019c576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610193906103df565b60405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f04dba622d284ed0014ee4b9a6a68386be1a4c08a4913ae272de89199cc68616360008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1660405161022b9190610277565b60405180910390a150565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600061026182610236565b9050919050565b61027181610256565b82525050565b600060208201905061028c6000830184610268565b92915050565b600080fd5b6102a081610256565b81146102ab57600080fd5b50565b6000813590506102bd81610297565b92915050565b6000602082840312156102d9576102d8610292565b5b60006102e7848285016102ae565b91505092915050565b600082825260208201905092915050565b7f4e4f54204f574e45520000000000000000000000000000000000000000000000600082015250565b60006103376009836102f0565b915061034282610301565b602082019050919050565b600060208201905081810360008301526103668161032a565b9050919050565b7f4552524f523a204144445245535320454e5445524544204953204e4f5420564160008201527f4c49440000000000000000000000000000000000000000000000000000000000602082015250565b60006103c96023836102f0565b91506103d48261036d565b604082019050919050565b600060208201905081810360008301526103f8816103bc565b905091905056fea2646970667358221220330d2d6bcaa641259f2c1c33f7d25d067a1c8e3371d62088f51b9d73fd1b7d7d64736f6c634300080b0033",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063cdbce03d1461003b578063f2fde38b14610059575b600080fd5b610043610075565b6040516100509190610277565b60405180910390f35b610073600480360381019061006e91906102c3565b61009e565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b3373ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161461012c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016101239061034d565b60405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561019c576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610193906103df565b60405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f04dba622d284ed0014ee4b9a6a68386be1a4c08a4913ae272de89199cc68616360008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1660405161022b9190610277565b60405180910390a150565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600061026182610236565b9050919050565b61027181610256565b82525050565b600060208201905061028c6000830184610268565b92915050565b600080fd5b6102a081610256565b81146102ab57600080fd5b50565b6000813590506102bd81610297565b92915050565b6000602082840312156102d9576102d8610292565b5b60006102e7848285016102ae565b91505092915050565b600082825260208201905092915050565b7f4e4f54204f574e45520000000000000000000000000000000000000000000000600082015250565b60006103376009836102f0565b915061034282610301565b602082019050919050565b600060208201905081810360008301526103668161032a565b9050919050565b7f4552524f523a204144445245535320454e5445524544204953204e4f5420564160008201527f4c49440000000000000000000000000000000000000000000000000000000000602082015250565b60006103c96023836102f0565b91506103d48261036d565b604082019050919050565b600060208201905081810360008301526103f8816103bc565b905091905056fea2646970667358221220330d2d6bcaa641259f2c1c33f7d25d067a1c8e3371d62088f51b9d73fd1b7d7d64736f6c634300080b0033",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.11+commit.d7f03943\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"checkOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ERC721Mintable.sol\":\"Ownable\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0xd5fa74b4fb323776fa4a8158800fec9d5ac0fec0d6dd046dd93798632ada265f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://33017a30a99cc5411a9e376622c31fc4a55cfc6a335e2f57f00cbf24a817ff3f\",\"dweb:/ipfs/QmWNQtWTPhA7Lo8nbxbc8KFMvZwbFYB8fSeEQ3vuapSV4a\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x51b758a8815ecc9596c66c37d56b1d33883a444631a3f916b9fe65cb863ef7c4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://997ca03557985b3c6f9143a18b6c3a710b3bc1c7f189ee956d305a966ecfb922\",\"dweb:/ipfs/QmQaD3Wb62F88SHqmpLttvF6wKuPDQep2LLUcKPekeRzvz\"]},\"@openzeppelin/contracts/utils/Counters.sol\":{\"keccak256\":\"0xf0018c2440fbe238dd3a8732fa8e17a0f9dce84d31451dc8a32f6d62b349c9f1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://59e1c62884d55b70f3ae5432b44bb3166ad71ae3acd19c57ab6ddc3c87c325ee\",\"dweb:/ipfs/QmezuXg5GK5oeA4F91EZhozBFekhq5TD966bHPH18cCqhu\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0x32c202bd28995dd20c4347b7c6467a6d3241c74c8ad3edcbb610cd9205916c45\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8179c356adb19e70d6b31a1eedc8c5c7f0c00e669e2540f4099e3844c6074d30\",\"dweb:/ipfs/QmWFbivarEobbqhS1go64ootVuHfVohBseerYy9FTEd1W2\"]},\"@openzeppelin/contracts/utils/math/SafeMath.sol\":{\"keccak256\":\"0xa2f576be637946f767aa56601c26d717f48a0aff44f82e46f13807eea1009a21\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://973868f808e88e21a1a0a01d4839314515ee337ad096286c88e41b74dcc11fc2\",\"dweb:/ipfs/QmfYuZxRfx2J2xdk4EXN7jKg4bUYEMTaYk9BAw9Bqn4o2Y\"]},\"project:/contracts/Concat.sol\":{\"keccak256\":\"0x7408163da3cd7bd0b3884f4f35c2fb6a9c7169f96e38a66b56a51d05c18a12e8\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://001f1c8eecc92a98f6b82be75b1222dff90e1bedfe86afadccc5bdcb7a5eb068\",\"dweb:/ipfs/QmNjx6AUZC8CqRMUmHw7SZL19KSMwRjCUX2oqfhcCrenXo\"]},\"project:/contracts/ERC721Mintable.sol\":{\"keccak256\":\"0xee4e71e2eb8ecb67bf7a08a0f3ef58dbab1e45a47ad0451e335c87c486ca7d81\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://19fe4d04e621053ce944aafcbdea75443275e0da72523167ecb8b67e7b581fb9\",\"dweb:/ipfs/QmcXXCUH9SixgvUWg9hzzVdWLv8UAe4BZC9VmtTuKQRQb5\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f04dba622d284ed0014ee4b9a6a68386be1a4c08a4913ae272de89199cc68616360008054906101000a900473ffffffffffffffffffffffffffffffffffffffff166040516100a091906100ee565b60405180910390a1610109565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60006100d8826100ad565b9050919050565b6100e8816100cd565b82525050565b600060208201905061010360008301846100df565b92915050565b610435806101186000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063cdbce03d1461003b578063f2fde38b14610059575b600080fd5b610043610075565b6040516100509190610277565b60405180910390f35b610073600480360381019061006e91906102c3565b61009e565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b3373ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161461012c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016101239061034d565b60405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561019c576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610193906103df565b60405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f04dba622d284ed0014ee4b9a6a68386be1a4c08a4913ae272de89199cc68616360008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1660405161022b9190610277565b60405180910390a150565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600061026182610236565b9050919050565b61027181610256565b82525050565b600060208201905061028c6000830184610268565b92915050565b600080fd5b6102a081610256565b81146102ab57600080fd5b50565b6000813590506102bd81610297565b92915050565b6000602082840312156102d9576102d8610292565b5b60006102e7848285016102ae565b91505092915050565b600082825260208201905092915050565b7f4e4f54204f574e45520000000000000000000000000000000000000000000000600082015250565b60006103376009836102f0565b915061034282610301565b602082019050919050565b600060208201905081810360008301526103668161032a565b9050919050565b7f4552524f523a204144445245535320454e5445524544204953204e4f5420564160008201527f4c49440000000000000000000000000000000000000000000000000000000000602082015250565b60006103c96023836102f0565b91506103d48261036d565b604082019050919050565b600060208201905081810360008301526103f8816103bc565b905091905056fea264697066735822122086045db76a82ea09128c0ac102a9905c5a4252aaa11935c19ec20fb1e2eee68464736f6c634300080b0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063cdbce03d1461003b578063f2fde38b14610059575b600080fd5b610043610075565b6040516100509190610277565b60405180910390f35b610073600480360381019061006e91906102c3565b61009e565b005b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905090565b3373ffffffffffffffffffffffffffffffffffffffff1660008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff161461012c576040517f08c379a00000000000000000000000000000000000000000000000000000000081526004016101239061034d565b60405180910390fd5b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141561019c576040517f08c379a0000000000000000000000000000000000000000000000000000000008152600401610193906103df565b60405180910390fd5b806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055507f04dba622d284ed0014ee4b9a6a68386be1a4c08a4913ae272de89199cc68616360008054906101000a900473ffffffffffffffffffffffffffffffffffffffff1660405161022b9190610277565b60405180910390a150565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b600061026182610236565b9050919050565b61027181610256565b82525050565b600060208201905061028c6000830184610268565b92915050565b600080fd5b6102a081610256565b81146102ab57600080fd5b50565b6000813590506102bd81610297565b92915050565b6000602082840312156102d9576102d8610292565b5b60006102e7848285016102ae565b91505092915050565b600082825260208201905092915050565b7f4e4f54204f574e45520000000000000000000000000000000000000000000000600082015250565b60006103376009836102f0565b915061034282610301565b602082019050919050565b600060208201905081810360008301526103668161032a565b9050919050565b7f4552524f523a204144445245535320454e5445524544204953204e4f5420564160008201527f4c49440000000000000000000000000000000000000000000000000000000000602082015250565b60006103c96023836102f0565b91506103d48261036d565b604082019050919050565b600060208201905081810360008301526103f8816103bc565b905091905056fea264697066735822122086045db76a82ea09128c0ac102a9905c5a4252aaa11935c19ec20fb1e2eee68464736f6c634300080b0033",
   "immutableReferences": {},
   "generatedSources": [
     {
@@ -1922,7 +1922,7 @@
   ],
   "sourceMap": "650:611:6:-:0;;;746:93;;;;;;;;;;779:10;770:6;;:19;;;;;;;;;;;;;;;;;;804:28;825:6;;;;;;;;;;804:28;;;;;;:::i;:::-;;;;;;;;650:611;;7:126:10;44:7;84:42;77:5;73:54;62:65;;7:126;;;:::o;139:96::-;176:7;205:24;223:5;205:24;:::i;:::-;194:35;;139:96;;;:::o;241:118::-;328:24;346:5;328:24;:::i;:::-;323:3;316:37;241:118;;:::o;365:222::-;458:4;496:2;485:9;481:18;473:26;;509:71;577:1;566:9;562:17;553:6;509:71;:::i;:::-;365:222;;;;:::o;650:611:6:-;;;;;;;",
   "deployedSourceMap": "650:611:6:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;944:80;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;1030:229;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;944:80;986:7;1011:6;;;;;;;;;;;1004:13;;944:80;:::o;1030:229::-;895:10;885:20;;:6;;;;;;;;;;:20;;;877:42;;;;;;;;;;;;:::i;:::-;;;;;;;;;1139:1:::1;1110:31;;1118:8;1110:31;;;;1102:79;;;;;;;;;;;;:::i;:::-;;;;;;;;;1200:8;1191:6;::::0;:17:::1;;;;;;;;;;;;;;;;;;1224:28;1245:6;::::0;::::1;;;;;;;;1224:28;;;;;;:::i;:::-;;;;;;;;1030:229:::0;:::o;7:126:10:-;44:7;84:42;77:5;73:54;62:65;;7:126;;;:::o;139:96::-;176:7;205:24;223:5;205:24;:::i;:::-;194:35;;139:96;;;:::o;241:118::-;328:24;346:5;328:24;:::i;:::-;323:3;316:37;241:118;;:::o;365:222::-;458:4;496:2;485:9;481:18;473:26;;509:71;577:1;566:9;562:17;553:6;509:71;:::i;:::-;365:222;;;;:::o;674:117::-;783:1;780;773:12;920:122;993:24;1011:5;993:24;:::i;:::-;986:5;983:35;973:63;;1032:1;1029;1022:12;973:63;920:122;:::o;1048:139::-;1094:5;1132:6;1119:20;1110:29;;1148:33;1175:5;1148:33;:::i;:::-;1048:139;;;;:::o;1193:329::-;1252:6;1301:2;1289:9;1280:7;1276:23;1272:32;1269:119;;;1307:79;;:::i;:::-;1269:119;1427:1;1452:53;1497:7;1488:6;1477:9;1473:22;1452:53;:::i;:::-;1442:63;;1398:117;1193:329;;;;:::o;1528:169::-;1612:11;1646:6;1641:3;1634:19;1686:4;1681:3;1677:14;1662:29;;1528:169;;;;:::o;1703:159::-;1843:11;1839:1;1831:6;1827:14;1820:35;1703:159;:::o;1868:365::-;2010:3;2031:66;2095:1;2090:3;2031:66;:::i;:::-;2024:73;;2106:93;2195:3;2106:93;:::i;:::-;2224:2;2219:3;2215:12;2208:19;;1868:365;;;:::o;2239:419::-;2405:4;2443:2;2432:9;2428:18;2420:26;;2492:9;2486:4;2482:20;2478:1;2467:9;2463:17;2456:47;2520:131;2646:4;2520:131;:::i;:::-;2512:139;;2239:419;;;:::o;2664:222::-;2804:34;2800:1;2792:6;2788:14;2781:58;2873:5;2868:2;2860:6;2856:15;2849:30;2664:222;:::o;2892:366::-;3034:3;3055:67;3119:2;3114:3;3055:67;:::i;:::-;3048:74;;3131:93;3220:3;3131:93;:::i;:::-;3249:2;3244:3;3240:12;3233:19;;2892:366;;;:::o;3264:419::-;3430:4;3468:2;3457:9;3453:18;3445:26;;3517:9;3511:4;3507:20;3503:1;3492:9;3488:17;3481:47;3545:131;3671:4;3545:131;:::i;:::-;3537:139;;3264:419;;;:::o",
-  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n\nimport \"@openzeppelin/contracts/utils/Address.sol\";\nimport \"@openzeppelin/contracts/utils/Counters.sol\";\nimport \"@openzeppelin/contracts/utils/math/SafeMath.sol\";\nimport \"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\";\nimport \"@openzeppelin/contracts/utils/Strings.sol\";\nimport \"./Concat.sol\";\n\n\n/********************************************************************************************/\n/*                                          Ownable                                         */\n/********************************************************************************************/\ncontract Ownable {\n    address private _owner;\n\n\n    event OwnershipTransferred(address);\n\n\n    constructor() {\n        _owner = msg.sender;\n        emit OwnershipTransferred(_owner);\n    }\n\n\n    modifier onlyOwner() {\n        require(_owner == msg.sender, \"NOT OWNER\");\n        _;\n    }\n\n\n    function checkOwner() public view returns(address){\n        return _owner;\n    }\n\n    function transferOwnership(address newOwner) public onlyOwner {\n        require(address(newOwner) != address(0), \"ERROR: ADDRESS ENTERED IS NOT VALID\");\n        _owner = newOwner;\n\n        emit OwnershipTransferred(_owner);\n    }\n}\n\n\n/********************************************************************************************/\n/*                                         Pausable                                         */\n/********************************************************************************************/\ncontract Pausable is Ownable {\n    bool private _paused;\n    \n\n    event Paused(address);\n    event Unpaused(address);\n\n\n    constructor () {\n        _paused = false;\n\n        emit Paused(msg.sender);\n    }\n\n    modifier whenNotPaused() {\n        require(_paused, \"CONTRACT IS PAUSED\");\n        _;\n    }\n\n    modifier paused() {\n        require(_paused == false, \"CONTRACT IS NOT PAUSED\");\n        _;\n    }\n\n\n    function checkStatus() public view returns(bool){\n        return _paused;\n    }\n\n    function unpause() public paused() onlyOwner() {\n        _paused = true;\n\n        emit Unpaused(msg.sender);\n    }\n\n    function pause() public whenNotPaused() onlyOwner() {\n        _paused = false;\n\n        emit Paused(msg.sender);\n    }\n}\n\n\n/********************************************************************************************/\n/*                                          ERC165                                          */\n/*                            https://eips.ethereum.org/EIPS/eip-165                        */\n/********************************************************************************************/\ncontract ERC165 {\n    bytes4 private constant _INTERFACE_ID_ERC165 = 0x01ffc9a7;\n    /*\n     * 0x01ffc9a7 ===\n     *     bytes4(keccak256('supportsInterface(bytes4)'))\n     */\n\n    mapping(bytes4 => bool) private _supportedInterfaces;\n\n\n    constructor () {\n        _registerInterface(_INTERFACE_ID_ERC165);\n    }\n\n\n    function supportsInterface(bytes4 interfaceId) external view returns (bool) {\n        return _supportedInterfaces[interfaceId];\n    }\n\n    function _registerInterface(bytes4 interfaceId) internal {\n        require(interfaceId != 0xffffffff);\n        _supportedInterfaces[interfaceId] = true;\n    }\n}\n\n\n/********************************************************************************************/\n/*                               ERC721 (NON FUNGIBLE TOKEN)                                */\n/********************************************************************************************/\ncontract ERC721 is Pausable, ERC165 {\n\n    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);\n    event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);\n    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);\n    \n    using SafeMath for uint256;\n    using Address for address;\n    using Counters for Counters.Counter;\n\n    bytes4 private constant _ERC721_RECEIVED = 0x150b7a02;\n    \n    mapping (uint256 => address) private _tokenOwner;\n    \n    mapping (uint256 => address) private _tokenApprovals;\n    \n    mapping (address => Counters.Counter) private _ownedTokensCount;\n    \n    mapping (address => mapping (address => bool)) private _operatorApprovals;\n    \n    bytes4 private constant _INTERFACE_ID_ERC721 = 0x80ac58cd;\n\n\n    constructor () {\n        _registerInterface(_INTERFACE_ID_ERC721);\n    }\n\n\n    function balanceOf(address owner) public view returns (uint256) {\n        return Counters.current(_ownedTokensCount[owner]);\n    }\n\n    function ownerOf(uint256 tokenId) public view returns (address) {\n        return _tokenOwner[tokenId];\n    }\n\n    function approve(address to, uint256 tokenId) public {\n        require(to != ownerOf(tokenId), \"ERROR: ADDRESS ALREADY THE OWNER OF THE TOKEN\");\n        require(ownerOf(tokenId) == msg.sender || isApprovedForAll(ownerOf(tokenId), msg.sender), \"ERROR: CALLER IS NOT TOKEN OWNER\");\n\n        _tokenApprovals[tokenId] = to;\n\n        emit Approval(ownerOf(tokenId), to, tokenId);\n    }\n\n    function getApproved(uint256 tokenId) public view returns (address) {\n        require(_exists(tokenId), \"ERROR: TOKEN ENTERED DOESN'T EXIST\" );\n\n        return _tokenApprovals[tokenId];\n    }\n\n    function setApprovalForAll(address to, bool approved) public {\n        require(to != msg.sender);\n        \n        _operatorApprovals[msg.sender][to] = approved;\n\n        emit ApprovalForAll(msg.sender, to, approved);\n    }\n\n    function isApprovedForAll(address owner, address operator) public view returns (bool) {\n        return _operatorApprovals[owner][operator];\n    }\n\n    function transferFrom(address from, address to, uint256 tokenId) public {\n        require(_isApprovedOrOwner(msg.sender, tokenId));\n\n        _transferFrom(from, to, tokenId);\n    }\n\n    function safeTransferFrom(address from, address to, uint256 tokenId) public {\n        safeTransferFrom(from, to, tokenId, \"\");\n    }\n\n    function safeTransferFrom(address from, address to, uint256 tokenId, bytes memory _data) public {\n        transferFrom(from, to, tokenId);\n        require(_checkOnERC721Received(from, to, tokenId, _data));\n    }\n\n    function _exists(uint256 tokenId) internal view returns (bool) {\n        address owner = _tokenOwner[tokenId];\n        return owner != address(0);\n    }\n\n    function _isApprovedOrOwner(address spender, uint256 tokenId) internal view returns (bool) {\n        address owner = ownerOf(tokenId);\n        return (spender == owner || getApproved(tokenId) == spender || isApprovedForAll(owner, spender));\n    }\n\n    function _mint(address to, uint256 tokenId) virtual internal {\n        require(!_exists(tokenId), \"ERROR: TOKEN ENTERED ALREADY EXISTS\");\n        require(to != address(0) && !to.isContract(), \"ERROR: ADDRESS ENTERED IS NOT VALID\");\n\n        _tokenOwner[tokenId] = to;\n        _ownedTokensCount[to].increment();\n\n        emit Transfer(msg.sender, to, tokenId);\n    }\n\n    function _transferFrom(address from, address to, uint256 tokenId) virtual internal {\n        require(_exists(tokenId), \"ERROR: TOKEN ENTERED DOESN'T EXIST\" );\n        \n        require(ownerOf(tokenId) == from, \"ERROR: 'FROM' ADDRESS IS NOT OWNER OF THE TOKEN\");\n        \n        require(address(to) != address(0), \"ERROR: 'TO' ADDRESS IS NOT VALID\");\n\n\n        _clearApproval(tokenId);\n\n        _ownedTokensCount[from].decrement();\n        _ownedTokensCount[to].increment();\n        _tokenOwner[tokenId] = to;\n\n        emit Transfer(from, to, tokenId);\n    }\n\n    function _checkOnERC721Received(address from, address to, uint256 tokenId, bytes memory _data) internal returns (bool) {\n        if (!to.isContract()) {\n            return true;\n        }\n\n        bytes4 retval = IERC721Receiver(to).onERC721Received(msg.sender, from, tokenId, _data);\n        return (retval == _ERC721_RECEIVED);\n    }\n\n    function _clearApproval(uint256 tokenId) private {\n        if (_tokenApprovals[tokenId] != address(0)) {\n            _tokenApprovals[tokenId] = address(0);\n        }\n    }\n}\n\n\n/********************************************************************************************/\n/*                               ERC721Enumerable\nFKDLAKL;SA\n/********************************************************************************************/\ncontract ERC721Enumerable is ERC165, ERC721 {\n    mapping(address => uint256[]) private _ownedTokens;\n\n    mapping(uint256 => uint256) private _ownedTokensIndex;\n\n    uint256[] private _allTokens;\n\n    mapping(uint256 => uint256) private _allTokensIndex;\n\n    bytes4 private constant _INTERFACE_ID_ERC721_ENUMERABLE = 0x780e9d63;\n    /*\n     * 0x780e9d63 ===\n     *     bytes4(keccak256('totalSupply()')) ^\n     *     bytes4(keccak256('tokenOfOwnerByIndex(address,uint256)')) ^\n     *     bytes4(keccak256('tokenByIndex(uint256)'))\n     */\n\n    constructor () {\n        // register the supported interface to conform to ERC721Enumerable via ERC165\n        _registerInterface(_INTERFACE_ID_ERC721_ENUMERABLE);\n    }\n\n    function tokenOfOwnerByIndex(address owner, uint256 index) public view returns (uint256) {\n        require(index < balanceOf(owner));\n        return _ownedTokens[owner][index];\n    }\n\n    function totalSupply() public view returns (uint256) {\n        return _allTokens.length;\n    }\n\n    function tokenByIndex(uint256 index) public view returns (uint256) {\n        require(index < totalSupply());\n        return _allTokens[index];\n    }\n\n    function _transferFrom(address from, address to, uint256 tokenId) override internal {\n        super._transferFrom(from, to, tokenId);\n\n        _removeTokenFromOwnerEnumeration(from, tokenId);\n\n        _addTokenToOwnerEnumeration(to, tokenId);\n    }\n\n    function _mint(address to, uint256 tokenId) override internal {\n        super._mint(to, tokenId);\n\n        _addTokenToOwnerEnumeration(to, tokenId);\n\n        _addTokenToAllTokensEnumeration(tokenId);\n    }\n\n    function _tokensOfOwner(address owner) internal view returns (uint256[] storage) {\n        return _ownedTokens[owner];\n    }\n\n    function _addTokenToOwnerEnumeration(address to, uint256 tokenId) private {\n        _ownedTokensIndex[tokenId] = _ownedTokens[to].length;\n        _ownedTokens[to].push(tokenId);\n    }\n\n    function _addTokenToAllTokensEnumeration(uint256 tokenId) private {\n        _allTokensIndex[tokenId] = _allTokens.length;\n        _allTokens.push(tokenId);\n    }\n\n    function _removeTokenFromOwnerEnumeration(address from, uint256 tokenId) private {\n        //**uint256 lastTokenIndex = _ownedTokens[from].length.sub(1);\n        uint256 lastTokenIndex = _ownedTokens[from].length - 1;\n        uint256 tokenIndex = _ownedTokensIndex[tokenId];\n\n        if (tokenIndex != lastTokenIndex) {\n            uint256 lastTokenId = _ownedTokens[from][lastTokenIndex];\n\n            _ownedTokens[from][tokenIndex] = lastTokenId; // Move the last token to the slot of the to-delete token\n            _ownedTokensIndex[lastTokenId] = tokenIndex; // Update the moved token's index\n        }\n\n        // This also deletes the contents at the last position of the array\n        //**_ownedTokens[from].length--;\n        _ownedTokens[from].pop();\n\n        // Note that _ownedTokensIndex[tokenId] hasn't been cleared: it still points to the old slot (now occupied by\n        // lastTokenId, or just over the end of the array if the token was the last one).\n    }\n\n    function _removeTokenFromAllTokensEnumeration(uint256 tokenId) private {\n        //**uint256 lastTokenIndex = _allTokens.length.sub(1);\n        uint256 lastTokenIndex = _allTokens.length - 1;\n        uint256 tokenIndex = _allTokensIndex[tokenId];\n\n        uint256 lastTokenId = _allTokens[lastTokenIndex];\n\n        _allTokens[tokenIndex] = lastTokenId; // Move the last token to the slot of the to-delete token\n        _allTokensIndex[lastTokenId] = tokenIndex; // Update the moved token's index\n\n        _allTokens.pop();\n        _allTokensIndex[tokenId] = 0;\n    }\n}\n\ncontract ERC721Metadata is ERC721Enumerable {//, usingOraclize {\n\n    string private _name;\n    string private _symbol;\n    string private _baseTokenURI; \n\n    mapping(uint256 => string) private _tokenURIs;\n\n    bytes4 private constant _INTERFACE_ID_ERC721_METADATA = 0x5b5e139f;\n    /*\n     * 0x5b5e139f ===\n     *     bytes4(keccak256('name()')) ^\n     *     bytes4(keccak256('symbol()')) ^\n     *     bytes4(keccak256('tokenURI(uint256)'))\n     */\n\n\n    constructor (string memory name, string memory symbol, string memory baseTokenURI) {\n        _name = name;\n        _symbol = symbol;\n        _baseTokenURI = baseTokenURI;\n\n        _registerInterface(_INTERFACE_ID_ERC721_METADATA);\n    }\n\n    function getName() external view returns(string memory) {\n        return _name;\n    }\n\n    function getSymbol() external view returns(string memory) {\n        return _symbol;\n    }\n\n    function getBaseTokenURI() external view returns(string memory) {\n        return _baseTokenURI;\n    }\n\n    function tokenURI(uint256 tokenId) external view returns (string memory) {\n        require(_exists(tokenId));\n        return _tokenURIs[tokenId];\n    }\n\n    function setTokenURI(uint256 tokenId) internal {\n        require(_exists(tokenId), \"ERROR: TOKEN ENTERED DOESN'T EXIST\");\n        _tokenURIs[tokenId] = Concat.strConcat(_baseTokenURI, Strings.toString(tokenId));\n    }\n\n}\n\n\ncontract REERC721Token is ERC721Metadata(\"REToken\", \"RST\", \"https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/\") {\n\n    function mint(address to, uint256 tokenId) public onlyOwner returns (bool){\n        super._mint(to, tokenId);\n        setTokenURI(tokenId);\n        return true;\n    }\n}",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\n\nimport \"@openzeppelin/contracts/utils/Address.sol\";\nimport \"@openzeppelin/contracts/utils/Counters.sol\";\nimport \"@openzeppelin/contracts/utils/math/SafeMath.sol\";\nimport \"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\";\nimport \"@openzeppelin/contracts/utils/Strings.sol\";\nimport \"./Concat.sol\";\n\n\n/********************************************************************************************/\n/*                                          Ownable                                         */\n/********************************************************************************************/\ncontract Ownable {\n    address private _owner;\n\n\n    event OwnershipTransferred(address);\n\n\n    constructor() {\n        _owner = msg.sender;\n        emit OwnershipTransferred(_owner);\n    }\n\n\n    modifier onlyOwner() {\n        require(_owner == msg.sender, \"NOT OWNER\");\n        _;\n    }\n\n\n    function checkOwner() public view returns(address){\n        return _owner;\n    }\n\n    function transferOwnership(address newOwner) public onlyOwner {\n        require(address(newOwner) != address(0), \"ERROR: ADDRESS ENTERED IS NOT VALID\");\n        _owner = newOwner;\n\n        emit OwnershipTransferred(_owner);\n    }\n}\n\n\n/********************************************************************************************/\n/*                                         Pausable                                         */\n/********************************************************************************************/\ncontract Pausable is Ownable {\n    bool private _paused;\n    \n\n    event Paused(address);\n    event Unpaused(address);\n\n\n    constructor () {\n        _paused = false;\n\n        emit Paused(msg.sender);\n    }\n\n    modifier whenNotPaused() {\n        require(_paused, \"CONTRACT IS PAUSED\");\n        _;\n    }\n\n    modifier paused() {\n        require(_paused == false, \"CONTRACT IS NOT PAUSED\");\n        _;\n    }\n\n\n    function checkStatus() public view returns(bool){\n        return _paused;\n    }\n\n    function unpause() public paused() onlyOwner() {\n        _paused = true;\n\n        emit Unpaused(msg.sender);\n    }\n\n    function pause() public whenNotPaused() onlyOwner() {\n        _paused = false;\n\n        emit Paused(msg.sender);\n    }\n}\n\n\n/********************************************************************************************/\n/*                                          ERC165                                          */\n/*                            https://eips.ethereum.org/EIPS/eip-165                        */\n/********************************************************************************************/\ncontract ERC165 {\n    bytes4 private constant _INTERFACE_ID_ERC165 = 0x01ffc9a7;\n    /*\n     * 0x01ffc9a7 ===\n     *     bytes4(keccak256('supportsInterface(bytes4)'))\n     */\n\n    mapping(bytes4 => bool) private _supportedInterfaces;\n\n\n    constructor () {\n        _registerInterface(_INTERFACE_ID_ERC165);\n    }\n\n\n    function supportsInterface(bytes4 interfaceId) external view returns (bool) {\n        return _supportedInterfaces[interfaceId];\n    }\n\n    function _registerInterface(bytes4 interfaceId) internal {\n        require(interfaceId != 0xffffffff);\n        _supportedInterfaces[interfaceId] = true;\n    }\n}\n\n\n/********************************************************************************************/\n/*                               ERC721 (NON FUNGIBLE TOKEN)                                */\n/********************************************************************************************/\ncontract ERC721 is Pausable, ERC165 {\n\n    event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);\n    event Approval(address indexed owner, address indexed approved, uint256 indexed tokenId);\n    event ApprovalForAll(address indexed owner, address indexed operator, bool approved);\n    \n    using SafeMath for uint256;\n    using Address for address;\n    using Counters for Counters.Counter;\n\n    bytes4 private constant _ERC721_RECEIVED = 0x150b7a02;\n    \n    mapping (uint256 => address) private _tokenOwner;\n    \n    mapping (uint256 => address) private _tokenApprovals;\n    \n    mapping (address => Counters.Counter) private _ownedTokensCount;\n    \n    mapping (address => mapping (address => bool)) private _operatorApprovals;\n    \n    bytes4 private constant _INTERFACE_ID_ERC721 = 0x80ac58cd;\n\n\n    constructor () {\n        _registerInterface(_INTERFACE_ID_ERC721);\n    }\n\n\n    function balanceOf(address owner) public view returns (uint256) {\n        return Counters.current(_ownedTokensCount[owner]);\n    }\n\n    function ownerOf(uint256 tokenId) public view returns (address) {\n        return _tokenOwner[tokenId];\n    }\n\n    function approve(address to, uint256 tokenId) public {\n        require(to != ownerOf(tokenId), \"ERROR: ADDRESS ALREADY THE OWNER OF THE TOKEN\");\n        require(ownerOf(tokenId) == msg.sender || isApprovedForAll(ownerOf(tokenId), msg.sender), \"ERROR: CALLER IS NOT TOKEN OWNER\");\n\n        _tokenApprovals[tokenId] = to;\n\n        emit Approval(ownerOf(tokenId), to, tokenId);\n    }\n\n    function getApproved(uint256 tokenId) public view returns (address) {\n        require(_exists(tokenId), \"ERROR: TOKEN ENTERED DOESN'T EXIST\" );\n\n        return _tokenApprovals[tokenId];\n    }\n\n    function setApprovalForAll(address to, bool approved) public {\n        require(to != msg.sender);\n        \n        _operatorApprovals[msg.sender][to] = approved;\n\n        emit ApprovalForAll(msg.sender, to, approved);\n    }\n\n    function isApprovedForAll(address owner, address operator) public view returns (bool) {\n        return _operatorApprovals[owner][operator];\n    }\n\n    function transferFrom(address from, address to, uint256 tokenId) public {\n        require(_isApprovedOrOwner(msg.sender, tokenId));\n\n        _transferFrom(from, to, tokenId);\n    }\n\n    function safeTransferFrom(address from, address to, uint256 tokenId) public {\n        safeTransferFrom(from, to, tokenId, \"\");\n    }\n\n    function safeTransferFrom(address from, address to, uint256 tokenId, bytes memory _data) public {\n        transferFrom(from, to, tokenId);\n        require(_checkOnERC721Received(from, to, tokenId, _data));\n    }\n\n    function _exists(uint256 tokenId) internal view returns (bool) {\n        address owner = _tokenOwner[tokenId];\n        return owner != address(0);\n    }\n\n    function _isApprovedOrOwner(address spender, uint256 tokenId) internal view returns (bool) {\n        address owner = ownerOf(tokenId);\n        return (spender == owner || getApproved(tokenId) == spender || isApprovedForAll(owner, spender));\n    }\n\n    function _mint(address to, uint256 tokenId) virtual internal {\n        require(!_exists(tokenId), \"ERROR: TOKEN ENTERED ALREADY EXISTS\");\n        require(to != address(0) && !to.isContract(), \"ERROR: ADDRESS ENTERED IS NOT VALID\");\n\n        _tokenOwner[tokenId] = to;\n        _ownedTokensCount[to].increment();\n\n        emit Transfer(msg.sender, to, tokenId);\n    }\n\n    function _transferFrom(address from, address to, uint256 tokenId) virtual internal {\n        require(_exists(tokenId), \"ERROR: TOKEN ENTERED DOESN'T EXIST\" );\n        \n        require(ownerOf(tokenId) == from, \"ERROR: 'FROM' ADDRESS IS NOT OWNER OF THE TOKEN\");\n        \n        require(address(to) != address(0), \"ERROR: 'TO' ADDRESS IS NOT VALID\");\n\n\n        _clearApproval(tokenId);\n\n        _ownedTokensCount[from].decrement();\n        _ownedTokensCount[to].increment();\n        _tokenOwner[tokenId] = to;\n\n        emit Transfer(from, to, tokenId);\n    }\n\n    function _checkOnERC721Received(address from, address to, uint256 tokenId, bytes memory _data) internal returns (bool) {\n        if (!to.isContract()) {\n            return true;\n        }\n\n        bytes4 retval = IERC721Receiver(to).onERC721Received(msg.sender, from, tokenId, _data);\n        return (retval == _ERC721_RECEIVED);\n    }\n\n    function _clearApproval(uint256 tokenId) private {\n        if (_tokenApprovals[tokenId] != address(0)) {\n            _tokenApprovals[tokenId] = address(0);\n        }\n    }\n}\n\n\n/********************************************************************************************/\n/*                               ERC721Enumerable\nFKDLAKL;SA\n/********************************************************************************************/\ncontract ERC721Enumerable is ERC165, ERC721 {\n    mapping(address => uint256[]) private _ownedTokens;\n\n    mapping(uint256 => uint256) private _ownedTokensIndex;\n\n    uint256[] private _allTokens;\n\n    mapping(uint256 => uint256) private _allTokensIndex;\n\n    bytes4 private constant _INTERFACE_ID_ERC721_ENUMERABLE = 0x780e9d63;\n    /*\n     * 0x780e9d63 ===\n     *     bytes4(keccak256('totalSupply()')) ^\n     *     bytes4(keccak256('tokenOfOwnerByIndex(address,uint256)')) ^\n     *     bytes4(keccak256('tokenByIndex(uint256)'))\n     */\n\n    constructor () {\n        // register the supported interface to conform to ERC721Enumerable via ERC165\n        _registerInterface(_INTERFACE_ID_ERC721_ENUMERABLE);\n    }\n\n    function tokenOfOwnerByIndex(address owner, uint256 index) public view returns (uint256) {\n        require(index < balanceOf(owner));\n        return _ownedTokens[owner][index];\n    }\n\n    function totalSupply() public view returns (uint256) {\n        return _allTokens.length;\n    }\n\n    function tokenByIndex(uint256 index) public view returns (uint256) {\n        require(index < totalSupply());\n        return _allTokens[index];\n    }\n\n    function _transferFrom(address from, address to, uint256 tokenId) override internal {\n        super._transferFrom(from, to, tokenId);\n\n        _removeTokenFromOwnerEnumeration(from, tokenId);\n\n        _addTokenToOwnerEnumeration(to, tokenId);\n    }\n\n    function _mint(address to, uint256 tokenId) override internal {\n        super._mint(to, tokenId);\n\n        _addTokenToOwnerEnumeration(to, tokenId);\n\n        _addTokenToAllTokensEnumeration(tokenId);\n    }\n\n    function _tokensOfOwner(address owner) internal view returns (uint256[] storage) {\n        return _ownedTokens[owner];\n    }\n\n    function _addTokenToOwnerEnumeration(address to, uint256 tokenId) private {\n        _ownedTokensIndex[tokenId] = _ownedTokens[to].length;\n        _ownedTokens[to].push(tokenId);\n    }\n\n    function _addTokenToAllTokensEnumeration(uint256 tokenId) private {\n        _allTokensIndex[tokenId] = _allTokens.length;\n        _allTokens.push(tokenId);\n    }\n\n    function _removeTokenFromOwnerEnumeration(address from, uint256 tokenId) private {\n        //**uint256 lastTokenIndex = _ownedTokens[from].length.sub(1);\n        uint256 lastTokenIndex = _ownedTokens[from].length - 1;\n        uint256 tokenIndex = _ownedTokensIndex[tokenId];\n\n        if (tokenIndex != lastTokenIndex) {\n            uint256 lastTokenId = _ownedTokens[from][lastTokenIndex];\n\n            _ownedTokens[from][tokenIndex] = lastTokenId; // Move the last token to the slot of the to-delete token\n            _ownedTokensIndex[lastTokenId] = tokenIndex; // Update the moved token's index\n        }\n\n        // This also deletes the contents at the last position of the array\n        //**_ownedTokens[from].length--;\n        _ownedTokens[from].pop();\n\n        // Note that _ownedTokensIndex[tokenId] hasn't been cleared: it still points to the old slot (now occupied by\n        // lastTokenId, or just over the end of the array if the token was the last one).\n    }\n\n    function _removeTokenFromAllTokensEnumeration(uint256 tokenId) private {\n        //**uint256 lastTokenIndex = _allTokens.length.sub(1);\n        uint256 lastTokenIndex = _allTokens.length - 1;\n        uint256 tokenIndex = _allTokensIndex[tokenId];\n\n        uint256 lastTokenId = _allTokens[lastTokenIndex];\n\n        _allTokens[tokenIndex] = lastTokenId; // Move the last token to the slot of the to-delete token\n        _allTokensIndex[lastTokenId] = tokenIndex; // Update the moved token's index\n\n        _allTokens.pop();\n        _allTokensIndex[tokenId] = 0;\n    }\n}\n\ncontract ERC721Metadata is ERC721Enumerable {//, usingOraclize {\n\n    string private _name;\n    string private _symbol;\n    string private _baseTokenURI; \n\n    mapping(uint256 => string) private _tokenURIs;\n\n    bytes4 private constant _INTERFACE_ID_ERC721_METADATA = 0x5b5e139f;\n    /*\n     * 0x5b5e139f ===\n     *     bytes4(keccak256('name()')) ^\n     *     bytes4(keccak256('symbol()')) ^\n     *     bytes4(keccak256('tokenURI(uint256)'))\n     */\n\n\n    constructor (string memory name, string memory symbol, string memory baseTokenURI) {\n        _name = name;\n        _symbol = symbol;\n        _baseTokenURI = baseTokenURI;\n\n        _registerInterface(_INTERFACE_ID_ERC721_METADATA);\n    }\n\n    function getName() external view returns(string memory) {\n        return _name;\n    }\n\n    function getSymbol() external view returns(string memory) {\n        return _symbol;\n    }\n\n    function getBaseTokenURI() external view returns(string memory) {\n        return _baseTokenURI;\n    }\n\n    function tokenURI(uint256 tokenId) external view returns (string memory) {\n        require(_exists(tokenId));\n        return _tokenURIs[tokenId];\n    }\n\n    function setTokenURI(uint256 tokenId) internal {\n        require(_exists(tokenId), \"ERROR: TOKEN ENTERED DOESN'T EXIST\");\n        _tokenURIs[tokenId] = Concat.strConcat(_baseTokenURI, Strings.toString(tokenId));\n    }\n\n}\n\n\ncontract REERC721Token is ERC721Metadata(\"REToken\", \"RST\", \"https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/\") {\n\n    function mint(address to, uint256 tokenId) public onlyOwner() returns (bool){\n        super._mint(to, tokenId);\n        setTokenURI(tokenId);\n        return true;\n    }\n}",
   "sourcePath": "/Users/fernandomaximof/Documents/udacity-capstone/eth-contracts/contracts/ERC721Mintable.sol",
   "ast": {
     "absolutePath": "project:/contracts/ERC721Mintable.sol",
@@ -16109,7 +16109,7 @@
             "body": {
               "id": 2332,
               "nodeType": "Block",
-              "src": "13598:92:6",
+              "src": "13600:92:6",
               "statements": [
                 {
                   "expression": {
@@ -16120,7 +16120,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2310,
-                        "src": "13620:2:6",
+                        "src": "13622:2:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -16132,7 +16132,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2312,
-                        "src": "13624:7:6",
+                        "src": "13626:7:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -16156,7 +16156,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4294967271,
-                        "src": "13608:5:6",
+                        "src": "13610:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_super$_REERC721Token_$2334_$",
                           "typeString": "type(contract super REERC721Token)"
@@ -16170,7 +16170,7 @@
                       "memberName": "_mint",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 2032,
-                      "src": "13608:11:6",
+                      "src": "13610:11:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
@@ -16184,7 +16184,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "13608:24:6",
+                    "src": "13610:24:6",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -16193,7 +16193,7 @@
                   },
                   "id": 2325,
                   "nodeType": "ExpressionStatement",
-                  "src": "13608:24:6"
+                  "src": "13610:24:6"
                 },
                 {
                   "expression": {
@@ -16204,7 +16204,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2312,
-                        "src": "13654:7:6",
+                        "src": "13656:7:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -16223,7 +16223,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 2302,
-                      "src": "13642:11:6",
+                      "src": "13644:11:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
@@ -16237,7 +16237,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "13642:20:6",
+                    "src": "13644:20:6",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -16246,7 +16246,7 @@
                   },
                   "id": 2329,
                   "nodeType": "ExpressionStatement",
-                  "src": "13642:20:6"
+                  "src": "13644:20:6"
                 },
                 {
                   "expression": {
@@ -16258,7 +16258,7 @@
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "13679:4:6",
+                    "src": "13681:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -16268,7 +16268,7 @@
                   "functionReturnParameters": 2318,
                   "id": 2331,
                   "nodeType": "Return",
-                  "src": "13672:11:6"
+                  "src": "13674:11:6"
                 }
               ]
             },
@@ -16278,6 +16278,7 @@
             "kind": "function",
             "modifiers": [
               {
+                "arguments": [],
                 "id": 2315,
                 "kind": "modifierInvocation",
                 "modifierName": {
@@ -16288,7 +16289,7 @@
                   "src": "13574:9:6"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "13574:9:6"
+                "src": "13574:11:6"
               }
             ],
             "name": "mint",
@@ -16368,7 +16369,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 2333,
-                  "src": "13593:4:6",
+                  "src": "13595:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -16379,7 +16380,7 @@
                     "id": 2316,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "13593:4:6",
+                    "src": "13595:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -16388,21 +16389,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "13592:6:6"
+              "src": "13594:6:6"
             },
             "scope": 2334,
-            "src": "13524:166:6",
+            "src": "13524:168:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 2335,
-        "src": "13391:301:6",
+        "src": "13391:303:6",
         "usedErrors": []
       }
     ],
-    "src": "32:13660:6"
+    "src": "32:13662:6"
   },
   "legacyAST": {
     "absolutePath": "project:/contracts/ERC721Mintable.sol",
@@ -30589,7 +30590,7 @@
             "body": {
               "id": 2332,
               "nodeType": "Block",
-              "src": "13598:92:6",
+              "src": "13600:92:6",
               "statements": [
                 {
                   "expression": {
@@ -30600,7 +30601,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2310,
-                        "src": "13620:2:6",
+                        "src": "13622:2:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -30612,7 +30613,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2312,
-                        "src": "13624:7:6",
+                        "src": "13626:7:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -30636,7 +30637,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 4294967271,
-                        "src": "13608:5:6",
+                        "src": "13610:5:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_type$_t_super$_REERC721Token_$2334_$",
                           "typeString": "type(contract super REERC721Token)"
@@ -30650,7 +30651,7 @@
                       "memberName": "_mint",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 2032,
-                      "src": "13608:11:6",
+                      "src": "13610:11:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
@@ -30664,7 +30665,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "13608:24:6",
+                    "src": "13610:24:6",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -30673,7 +30674,7 @@
                   },
                   "id": 2325,
                   "nodeType": "ExpressionStatement",
-                  "src": "13608:24:6"
+                  "src": "13610:24:6"
                 },
                 {
                   "expression": {
@@ -30684,7 +30685,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 2312,
-                        "src": "13654:7:6",
+                        "src": "13656:7:6",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -30703,7 +30704,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 2302,
-                      "src": "13642:11:6",
+                      "src": "13644:11:6",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
@@ -30717,7 +30718,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "13642:20:6",
+                    "src": "13644:20:6",
                     "tryCall": false,
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
@@ -30726,7 +30727,7 @@
                   },
                   "id": 2329,
                   "nodeType": "ExpressionStatement",
-                  "src": "13642:20:6"
+                  "src": "13644:20:6"
                 },
                 {
                   "expression": {
@@ -30738,7 +30739,7 @@
                     "kind": "bool",
                     "lValueRequested": false,
                     "nodeType": "Literal",
-                    "src": "13679:4:6",
+                    "src": "13681:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -30748,7 +30749,7 @@
                   "functionReturnParameters": 2318,
                   "id": 2331,
                   "nodeType": "Return",
-                  "src": "13672:11:6"
+                  "src": "13674:11:6"
                 }
               ]
             },
@@ -30758,6 +30759,7 @@
             "kind": "function",
             "modifiers": [
               {
+                "arguments": [],
                 "id": 2315,
                 "kind": "modifierInvocation",
                 "modifierName": {
@@ -30768,7 +30770,7 @@
                   "src": "13574:9:6"
                 },
                 "nodeType": "ModifierInvocation",
-                "src": "13574:9:6"
+                "src": "13574:11:6"
               }
             ],
             "name": "mint",
@@ -30848,7 +30850,7 @@
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
                   "scope": 2333,
-                  "src": "13593:4:6",
+                  "src": "13595:4:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -30859,7 +30861,7 @@
                     "id": 2316,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "13593:4:6",
+                    "src": "13595:4:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -30868,21 +30870,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "13592:6:6"
+              "src": "13594:6:6"
             },
             "scope": 2334,
-            "src": "13524:166:6",
+            "src": "13524:168:6",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
         "scope": 2335,
-        "src": "13391:301:6",
+        "src": "13391:303:6",
         "usedErrors": []
       }
     ],
-    "src": "32:13660:6"
+    "src": "32:13662:6"
   },
   "compiler": {
     "name": "solc",
@@ -30890,7 +30892,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-25T06:49:51.878Z",
+  "updatedAt": "2022-01-25T10:16:09.872Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
