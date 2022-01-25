@@ -4,7 +4,7 @@ Final Udacity Blockchain Project
 Contract Address: https://rinkeby.etherscan.io/address/0xb9FbC717D7e08bdE1d076c407bc0fd80Ca85eE93
 
 Contract ABIs:
-
+```
 [
     {
       "inputs": [
@@ -660,5 +660,6 @@ Contract ABIs:
       "type": "function"
     }
   ]
+```
 
 OpenSea Storefront: 
