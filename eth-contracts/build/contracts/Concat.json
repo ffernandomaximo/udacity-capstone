@@ -10,7 +10,7 @@
   "sourceMap": "57:1614:5:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
   "deployedSourceMap": "57:1614:5:-:0;;;;;;;;",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.0;\n\nlibrary Concat {\n\n    function strConcat(string memory _a, string memory _b) internal pure returns (string memory _concatenatedString) {\n        return strConcat(_a, _b, \"\", \"\", \"\");\n    }\n\n    function strConcat(string memory _a, string memory _b, string memory _c) internal pure returns (string memory _concatenatedString) {\n        return strConcat(_a, _b, _c, \"\", \"\");\n    }\n\n    function strConcat(string memory _a, string memory _b, string memory _c, string memory _d) internal pure returns (string memory _concatenatedString) {\n        return strConcat(_a, _b, _c, _d, \"\");\n    }\n\n    function strConcat(string memory _a, string memory _b, string memory _c, string memory _d, string memory _e) internal pure returns (string memory _concatenatedString) {\n        bytes memory _ba = bytes(_a);\n        bytes memory _bb = bytes(_b);\n        bytes memory _bc = bytes(_c);\n        bytes memory _bd = bytes(_d);\n        bytes memory _be = bytes(_e);\n        string memory abcde = new string(_ba.length + _bb.length + _bc.length + _bd.length + _be.length);\n        bytes memory babcde = bytes(abcde);\n        uint k = 0;\n        uint i = 0;\n        for (i = 0; i < _ba.length; i++) {\n            babcde[k++] = _ba[i];\n        }\n        for (i = 0; i < _bb.length; i++) {\n            babcde[k++] = _bb[i];\n        }\n        for (i = 0; i < _bc.length; i++) {\n            babcde[k++] = _bc[i];\n        }\n        for (i = 0; i < _bd.length; i++) {\n            babcde[k++] = _bd[i];\n        }\n        for (i = 0; i < _be.length; i++) {\n            babcde[k++] = _be[i];\n        }\n        return string(babcde);\n    }\n}",
-  "sourcePath": "/Users/fernandomaximof/Documents/udacity-projects/capstone/Blockchain-Capstone/eth-contracts/contracts/Concat.sol",
+  "sourcePath": "/Users/fernandomaximof/Documents/udacity-capstone/eth-contracts/contracts/Concat.sol",
   "ast": {
     "absolutePath": "project:/contracts/Concat.sol",
     "exportedSymbols": {
@@ -6719,7 +6719,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-24T08:46:28.432Z",
+  "updatedAt": "2022-01-25T06:49:51.801Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

@@ -88,7 +88,7 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.8.0;\nimport \"./ERC721Mintable.sol\";\nimport \"./verifier.sol\";\n\ninterface IZokratesVerifier {\n    struct Proof {\n        Pairing.G1Point a;\n        Pairing.G2Point b;\n        Pairing.G1Point c;\n    }\n\n    function verifyTx(Proof memory proof, uint256[2] memory input) external view returns (bool r);\n\n}\n\ncontract SolnSquareVerifier is REERC721Token {\n    struct Solution {\n        address addr;\n        uint256 index;\n    }\n    Solution[] solutions;\n    //  define a mapping to store unique solutions submitted\n    mapping(uint256 => Solution) uniqueSolutions;\n\n    event SolutionAdded(address addr, uint256 index);\n\n    IZokratesVerifier verifier;\n\n    constructor(address contractAddress) {\n        verifier = IZokratesVerifier(contractAddress);\n    }\n\n    function addSolution(address _addr, uint256 tokenId) public {\n        solutions.push(Solution(_addr, tokenId));\n        uniqueSolutions[tokenId] = Solution(_addr, tokenId);\n\n        emit SolutionAdded(_addr, tokenId);\n    }\n\n    struct Proof {\n        uint256[2] a;\n        uint256[2][2] b;\n        uint256[2] c;\n    }\n\n    function mintNFT(uint256 tokenId, IZokratesVerifier.Proof memory proof, uint256[2] memory input) public {\n        require(uniqueSolutions[tokenId].addr == address(0), \"ERROR: SOLUTION IS NOT UNIQUE\");\n        \n        require(verifier.verifyTx(proof, input), \"ERROR: VERIFICATION FAILED. CAN'T MINT TOKEN\");\n\n        addSolution(msg.sender, tokenId);\n        _mint(msg.sender, tokenId);\n\n    }\n}",
-  "sourcePath": "/Users/fernandomaximof/Documents/udacity-projects/capstone/Blockchain-Capstone/eth-contracts/contracts/SolnSquareVerifier.sol",
+  "sourcePath": "/Users/fernandomaximof/Documents/udacity-capstone/eth-contracts/contracts/SolnSquareVerifier.sol",
   "ast": {
     "absolutePath": "project:/contracts/SolnSquareVerifier.sol",
     "exportedSymbols": {
@@ -4229,7 +4229,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.3",
-  "updatedAt": "2022-01-24T08:46:28.533Z",
+  "updatedAt": "2022-01-25T06:49:51.924Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},
