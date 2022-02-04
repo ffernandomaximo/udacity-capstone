@@ -1,7 +1,7 @@
 const HDWalletProvider = require('truffle-hdwallet-provider');
 const infuraKey = "b20ea9f751b1442dbe5f2d1257d00bc5";
 
-const mnemonic = "globe crystal hood calm concert inside dream strike dice crew input basket";
+const mnemonic = "";
 
 module.exports = {
   networks: {
