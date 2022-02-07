@@ -1,6 +1,13 @@
 # udacity-capstone
 Final Udacity Blockchain Project
 
+**Contract Version:**
+pragma solidity ^0.8.0
+
+**Contract Dependencies:**
+@openzeppelin/contracts
+Install OpenZeppelin: ```npm install @openzeppelin/contracts```
+
 **Rinkeby Contract Address:** https://rinkeby.etherscan.io/address/0xb9FbC717D7e08bdE1d076c407bc0fd80Ca85eE93
 
 **OpenSea Storefront:** https://testnets.opensea.io/collection/unidentified-contract-gkpsczudlx
@@ -14,7 +21,10 @@ Final Udacity Blockchain Project
   6. interact with contract.
   7. here you can try functions like: OwnerOf, BalanceOf, TotalSupply, GetName, GetSymbol, and others.
 
-  To test the contract using Truffle, it is required to install openzepellin: ```npm install @openzeppelin/contracts```
+  To test the contract locally:
+  1. truffle compile
+  2. truffle migrate --reset
+  3. truffle test
 
 Contract ABIs:
 ```
