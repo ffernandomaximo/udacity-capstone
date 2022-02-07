@@ -1,9 +1,20 @@
 # udacity-capstone
 Final Udacity Blockchain Project
 
-Contract Address: https://rinkeby.etherscan.io/address/0xb9FbC717D7e08bdE1d076c407bc0fd80Ca85eE93
+**Rinkeby Contract Address:** https://rinkeby.etherscan.io/address/0xb9FbC717D7e08bdE1d076c407bc0fd80Ca85eE93
 
-OpenSea Storefront: https://testnets.opensea.io/collection/unidentified-contract-gkpsczudlx
+**OpenSea Storefront:** https://testnets.opensea.io/collection/unidentified-contract-gkpsczudlx
+
+**Testing:** 
+  1. access https://www.myetherwallet.com/
+  2. connect to your browser extension wallet
+  3. select contracts > interact with contract
+  4. use the contract address: ```0xb9FbC717D7e08bdE1d076c407bc0fd80Ca85eE93```
+  5. use the ABI listed bellow.
+  6. interact with contract.
+  7. here you can try functions like: OwnerOf, BalanceOf, TotalSupply, GetName, GetSymbol, and others.
+
+  To test the contract using Truffle, it is required to install openzepellin: ```npm install @openzeppelin/contracts```
 
 Contract ABIs:
 ```
